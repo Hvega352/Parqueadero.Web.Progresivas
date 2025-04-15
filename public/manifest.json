@@ -1,0 +1,36 @@
+{
+    "theme_color": "#FFD1DC",
+    "background_color": "#FFEEE",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./index.html",
+    "name": "Parqueadero para empresa",
+    "short_name": "Parqueadero",
+    "description" : "Regiatro de parqueadero para empresa",
+    "lang": "es-ES",
+    "orientation" : "portrait",
+    "icons": [
+        {"src": "./images/Parqueadero.jpg",
+        "sizes": "1024x1024",
+        "type": "image/jpg"
+        },
+
+        {
+            "src": "./images/Parqueadero512.png",
+            "sizes" : "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/Parqueadero128.png",
+            "sizes":"128x128",
+            "type":"image/png"
+        },
+        {
+            "src": "./images/CARRO.jpg/Parqueadero128.png",
+            "sizes":"128x128",
+            "type":"image/png"
+        }
+
+
+    ]
+}

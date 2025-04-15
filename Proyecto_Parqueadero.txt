@@ -1,0 +1,66 @@
+Contenido del Proyecto: PARQUEADERO.WEB.PROGRESIVAS
+
+///// Estructura de Carpetas y Archivos:
+
+ node_modules
+ public
+  dist
+ serviceWork.js
+ images
+ CARRO.jpg
+ carro2.jpg
+ auth.js
+ dashboard.html
+ dashboard.js
+ index.html
+ login.html
+ manifest.json
+ package.json
+ script.js
+ styles.css
+ users.js
+ vehicles.js
+ work.js
+ app.js
+ db.js
+ package-lock.json
+ usuarios.js
+
+////Descripción General del Proyecto:
+
+Este proyecto es una Aplicación Web Progresiva (PWA) completamente funcional para la gestión de un parqueadero. 
+ Está diseñada para ser utilizada desde cualquier dispositivo — móvil, tablet o PC — adaptándose a cada pantalla
+ de forma responsiva. La aplicación puede instalarse como si fuera una app nativa gracias al uso de tecnologías 
+ modernas como service workers y manifest.json.
+
+///Funcionalidades Implementadas:
+
+ Página principal (index.html):
+ Registro de Vehículos:
+ Campos: Marca, Modelo, Año, Placa.
+ Botón "Agregar Vehículo".
+ Visualización en tabla con los vehículos ingresados.
+
+ Registro de Usuarios:
+ Campos: Nombre de Usuario, Email.
+ Botón "Agregar Usuario".
+ Visualización en tabla con los usuarios registrados.
+
+ Adaptabilidad:
+ Botones para simular vista en Móvil, Tablet y PC.
+ Interfaz clara y responsive que se ajusta automáticamente al tamaño de pantalla.
+
+ Otras funcionalidades:
+`styles.css`: Diseño limpio y responsivo.
+`auth.js`, `users.js`, `vehicles.js`, `dashboard.js`: Manejo de autenticación, lógica de usuarios, 
+vehículos y panel administrativo.
+ `serviceWork.js`: Permite la funcionalidad offline y almacenamiento en caché como PWA.
+`manifest.json`: Define los metadatos necesarios para instalar la aplicación como app en dispositivos móviles.
+`dashboard.html`, `login.html`: Vistas auxiliares para autenticación y administración.
+`db.js`: Encargado de la lógica de almacenamiento o conexión con base de datos local.
+`images/`: Contiene imágenes utilizadas en la interfaz.
+`package.json`, `package-lock.json`: Manejo de dependencias y configuración general del entorno Node.js.
+
+Todo el sistema está integrado, funcionando de forma fluida, accesible desde cualquier tipo de dispositivo, y 
+cumple con los principios de una PWA moderna.
+

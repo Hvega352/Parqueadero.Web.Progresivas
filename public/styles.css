@@ -1,0 +1,162 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px 0;
+    width: calc(25% - 12px);
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+body {
+    font-size: 14px;
+}
+
+.col-sm-6 {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+/* Media Queries */
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 992px) {
+    body.desktop {
+        font-size: 16px;
+    }
+    .col-md-3 {
+        width: 25%; /* Ejemplo: Ajustar el ancho de las columnas en escritorio */
+    }
+    form input {
+        width: calc(25% - 12px); /* Ajuste para los inputs en escritorio */
+    }
+}
+
+/* Estilos para pantallas de tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    body.tablet {
+        font-size: 14px;
+    }
+    .col-md-3 {
+        width: 50%; /* Ejemplo: Ajustar el ancho de las columnas en tablet */
+    }
+    form input {
+        width: calc(50% - 12px); /* Ajuste para los inputs en tablet */
+    }
+}
+
+/* Estilos para pantallas de móvil */
+@media (max-width: 767px) {
+    body.mobile {
+        font-size: 12px;
+    }
+    .col-sm-6 {
+        width: 100%;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    form input {
+        width: calc(100% - 12px);
+    }
+}
+
+/* Estilos para el contenedor de los botones */
+#device-simulator {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para los botones */
+#device-simulator button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#device-simulator button:hover {
+    background-color: #367C39;
+}
