@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFD1DC"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobileOptimized" content="width"/>
+    <meta name="HandheldFrendly" content="true"/>
+    <link rel="apple-touch-icon" sizes="192x192" href="./images/Parqueadero.jpg">
+    <link rel="apple-touch-startup-image" href="./images/Parqueadero.jpg"> 
+    <title>Registro de Vehículos y Usuarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="images" href="./images/CARRO.jpg">
+    <link rel="images" href="./images/carro2.jpg">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="desktop">
+
+
+
+    <div class="container">
+        <h1>Registro de Vehículos</h1>
+
+        <form id="vehicle-form">
+            <div class="form-row">
+                <div class="form-group col-md-3 col-sm-6">
+                    <label for="brand">Marca</label>
+                    <input type="text" class="form-control" id="brand" required>
+                </div>
+                <div class="form-group col-md-3 col-sm-6">
+                    <label for="model">Modelo</label>
+                    <input type="text" class="form-control" id="model" required>
+                </div>
+                <div class="form-group col-md-2 col-sm-6">
+                    <label for="year">Año</label>
+                    <input type="number" class="form-control" id="year" required>
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <label for="plate">Placa</label>
+                    <input type="text" class="form-control" id="plate" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Vehículo</button>
+        </form>
+
+        <h2 class="mt-4">Lista de Vehículos</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered" id="vehicle-list">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Placa</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+      
+                </tbody>
+            </table>
+        </div>
+
+        <h1 class="mt-5">Registro de Usuarios</h1>
+        <form id="user-form">
+            <div class="form-row">
+                <div class="form-group col-md-4 col-sm-6">
+                    <label for="username">Nombre de Usuario</label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="form-group col-md-4 col-sm-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+        </form>
+
+        <h2 class="mt-4">Lista de Usuarios</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered" id="user-list">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Placa</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+      
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    
+
+    <script>
+        // Inicializa el estado del dispositivo al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedDevice = localStorage.getItem('device') || 'desktop';
+            simulateDevice(savedDevice);
+        });
+    </script>
+        <script src="script.js"></script>
+        <script src="styles.css"></script>
+        <script src="images/CARRO.jpg"></script>
+        <script src="images/carro2.jpg"></script>
+
+</body>
+</html>
